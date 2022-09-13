@@ -12,7 +12,7 @@
 
 let links = document.links
 let search = document.getElementsByName("search")[0];
-let keywords = ["как стать разработчиком?", "Как стать программистом с нуля в 2022", "как стать программистом, имея самые базовые представления о разработке в целом"];
+let keywords = ["как стать разработчиком?", "Как стать программистом с нуля в 2022", "как стать программистом, имея самые базовые представления о разработке"];
 let keyword = keywords[getRandom(0, keywords.length)];
 let BingInput = document.getElementsByName("q")[0];
 let sb_bp = document.getElementsByClassName("sb_bp")[5]
@@ -30,14 +30,14 @@ if (search !== undefined) {
       }, getRandom(1000, 2500));
 
     }
-  }, 350);
+  }, 200);
 
 
 }else if (location.hostname == "tproger.ru") {
   console.log("Мы на целевом сайте");
   setInterval(()=>{
     let index = getRandom(0, links.length);
-    if (getRandom(0, 101) > 70) {
+    if (getRandom(0, 101) > 80) {
       location.href = "https://www.bing.com/";
     }
     if (links[index].href.indexOf("tproger.ru") !== -1) {
