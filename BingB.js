@@ -30,7 +30,7 @@ if (search !== undefined) {
       }, getRandom(1000, 2500));
 
     }
-  }, 300);
+  }, 350);
 
 
 }else if (location.hostname == "tproger.ru") {
