@@ -2,7 +2,7 @@
 // @name         BingBot
 // @namespace    http://tampermonkey.net/
 // @version      1.0
-// @description  Bot for Bing
+// @description  Bing
 // @author       Vladislav Skrynnikov
 // @match        https://www.bing.com/*
 // @match        https://tproger.ru/*
@@ -37,7 +37,7 @@ if (search !== undefined) {
   console.log("Мы на целевом сайте");
   setInterval(()=>{
     let index = getRandom(0, links.length);
-    if (getRandom(0, 101) > 80) {
+    if (getRandom(0, 101) > 75) {
       location.href = "https://www.bing.com/";
     }
     if (links[index].href.indexOf("tproger.ru") !== -1) {
