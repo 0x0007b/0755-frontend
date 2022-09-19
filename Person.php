@@ -54,13 +54,13 @@ class Person {
 $timur = new Person("Timur", "Ivanov", 63); 
 $asya = new Person("Asya", "Bash", 71); 
 
-$alex = new Person("Aleksandr", "Ivanov", 71); 
+$alexandr = new Person("Aleksandr", "Ivanov", 71); 
 $anna = new Person("Anna", "Ryabova", 73); 
 
 
 
 $alex = new Person("Alex", "Ivanov", 42, $asya, $timur);
-$olga = new Person("Olga", "Ivanova", 42, $alex, $anna); 
+$olga = new Person("Olga", "Ivanova", 42, $alexandr, $anna); 
 $valera = new Person("Valera", "Ivanov", 15, $olga, $alex);
 
 
